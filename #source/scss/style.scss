@@ -300,6 +300,7 @@ h6 {
       line-height: 150%;
       color: #ffffff;
       transition: opacity 0.2s ease-in-out;
+      overflow: hidden;
       &:hover {
         opacity: 0.8;
       }
@@ -472,6 +473,7 @@ h6 {
       font-size: 30px;
       color: #ffffff;
       background: #162c4e;
+      overflow: hidden;
       cursor: pointer;
       .accordion-title-bg {
         position: absolute;
@@ -564,6 +566,7 @@ h6 {
           font-size: 24px;
           line-height: 120%;
           color: rgba(255, 255, 255, 0.8);
+          overflow: hidden;
         }
         .description-date {
           margin-top: 22px;
@@ -576,8 +579,11 @@ h6 {
         }
         .description-info-link {
           max-width: 260px;
+          max-height: 70px;
+          overflow: hidden;
           margin-top: 32px;
-          padding: 20px 46px;
+          padding: 20px 26px 20px 46px;
+          text-align: left;
           border-color: #ffffff;
           border-style: solid;
           border-width: 3px 3px 3px 9px;
