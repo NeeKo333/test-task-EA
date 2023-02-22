@@ -19,11 +19,13 @@ class Popup {
       e.target.classList.contains("close-popup-btn")
     ) {
       this.popup.classList.remove("active");
+      document.body.classList.remove("freeze");
     }
   }
 
   show() {
     this.popup.classList.add("active");
+    document.body.classList.add("freeze");
   }
 
   setMessage(title, message, type = "SUCCESS") {
