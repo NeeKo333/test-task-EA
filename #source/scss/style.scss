@@ -487,7 +487,7 @@ h6 {
       }
       &.active {
         &::after {
-          display: none;
+          width: 0%;
         }
         .accordion-title-bg {
           opacity: 0;
@@ -499,6 +499,7 @@ h6 {
         top: 0;
         left: 0;
         content: "";
+        transition: all 0.2s ease 0s;
         width: 100%;
         height: 100%;
         backdrop-filter: blur(1px);
