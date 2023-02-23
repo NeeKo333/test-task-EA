@@ -24,37 +24,6 @@ const timerHandler = () => {
   hoursSpan.textContent = hours < 10 ? "0" + hours : hours;
   minutesSpan.textContent = min < 10 ? "0" + min : min;
   secondsSpan.textContent = sec < 10 ? "0" + sec : sec;
-
-  const changeTimerText = () => {
-    if (window.innerWidth <= 940) {
-      daysSpan.nextElementSibling.textContent !== "DD" &&
-        (daysSpan.nextElementSibling.textContent = "DD");
-
-      hoursSpan.nextElementSibling.textContent !== "HH" &&
-        (hoursSpan.nextElementSibling.textContent = "HH");
-
-      minutesSpan.nextElementSibling.textContent !== "MM" &&
-        (minutesSpan.nextElementSibling.textContent = "MM");
-
-      secondsSpan.nextElementSibling.textContent !== "SS" &&
-        (secondsSpan.nextElementSibling.textContent = "SS");
-    } else {
-      daysSpan.nextElementSibling.textContent !== "Days" &&
-        (daysSpan.nextElementSibling.textContent = "Days");
-
-      hoursSpan.nextElementSibling.textContent !== "Hours" &&
-        (hoursSpan.nextElementSibling.textContent = "Hours");
-
-      minutesSpan.nextElementSibling.textContent !== "Minutes" &&
-        (minutesSpan.nextElementSibling.textContent = "Minutes");
-
-      secondsSpan.nextElementSibling.textContent !== "Seconds" &&
-        (secondsSpan.nextElementSibling.textContent = "Seconds");
-    }
-  };
-
-  changeTimerText();
-  window.addEventListener("resize", () => changeTimerText());
 };
 
 const Timer = {

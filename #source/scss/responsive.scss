@@ -167,6 +167,12 @@
               width: 70px;
               background: url("/assets/images/timer-bg-small.svg") no-repeat;
               background-size: contain;
+              &.large {
+                display: none;
+              }
+              &.small {
+                display: block;
+              }
             }
           }
         }
