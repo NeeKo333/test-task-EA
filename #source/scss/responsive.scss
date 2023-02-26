@@ -509,21 +509,17 @@
 
 @media (max-width: 340px) {
   .wrapper {
-    .main {
-      .timer-conteiner {
-        gap: 5px;
-      }
-    }
-  }
-}
-@media (max-width: 340px) {
-  .wrapper {
     .first-section-footer {
       .first-section-footer-form {
         width: 270px;
         .form-input {
           font-size: 12px;
         }
+      }
+    }
+    .main {
+      .timer-conteiner {
+        gap: 5px;
       }
     }
   }
